@@ -1,0 +1,14 @@
+/* :host{
+    color: red;
+    font-size: 14px;
+} */
+
+label{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+div { 
+    background: aliceblue; 
+  }

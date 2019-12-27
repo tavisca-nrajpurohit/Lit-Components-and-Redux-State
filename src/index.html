@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polymer Project - Typescript</title>
+        <script src="webcomponentjs/webcomponents-lite.js"></script>
+        <script src="webcomponentjs/webcomponents-loader.js"></script>
+    </head>
+
+    <body>
+        App with <b>Redux State Management</b>!
+        <button onclick="makeNewForm()">make new form!</button>
+        <hr>
+        <div id="forms"></div>
+        <script>
+            let count = 1;
+            function makeNewForm(){
+            let containerDiv = document.getElementById("forms");
+            let form = document.createElement('div');
+            form.innerHTML = '<custom-form propPath="app.form-'+count+'"></custom-form><hr>';
+            count++;
+            containerDiv.appendChild(form);
+            }
+        </script>
+    </body>
+</html>
